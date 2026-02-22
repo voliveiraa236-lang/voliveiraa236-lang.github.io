@@ -1,10 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Meu Site</title>
+  <title>Site Amor ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: pink;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    .heart {
+      position: absolute;
+      color: red;
+      font-size: 20px;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-10vh);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh);
+        opacity: 0;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40vh;
+      color: white;
+      font-size: 40px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1> Feit por Victor</h1>
-  <p>Salveeee</p>
+
+  <h1>❤️ Amor no ar ❤️</h1>
+
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤️";
+
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
+
 </body>
 </html>
