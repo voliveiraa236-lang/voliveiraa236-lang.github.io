@@ -1,24 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Para Alice ❤️</title>
+<meta charset="UTF-8">
+<title>Surpresa ❤️</title>
+
 <style>
+
 body{
-background-color:purple;
+  margin:0;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(180deg,#1a0026,#330033);
+  font-family:Arial, sans-serif;
+  color:white;
+  text-align:center;
 }
 
-h1{
-top:0;
-text-align:center;
-color:pink;
-width:100%;
-font-size:70px;
+/* Coração */
+.heart{
+  font-size:80px;
+  color:pink;
+  animation:pulse 1.5s infinite;
 }
 
-  </style>
+/* Animação de pulsar */
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.2);}
+  100%{transform:scale(1);}
+}
+
+/* Frase */
+.subtitle{
+  margin-top:20px;
+  opacity:0.8;
+}
+
+/* Botão */
+button{
+  margin-top:30px;
+  padding:15px 30px;
+  border:none;
+  border-radius:30px;
+  font-size:18px;
+  background:rgba(255,255,255,0.1);
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:pink;
+  color:black;
+}
+
+/* Texto pequeno */
+.small{
+  margin-top:20px;
+  font-size:14px;
+  opacity:0.6;
+}
+
+</style>
 </head>
 
 <body>
-<h1> Eu te amo, meu amor </h1>
+
+<div class="heart">❤️</div>
+
+<div class="subtitle">
+  Uma surpresa especial te espera
+</div>
+
+<button onclick="alert('Você é a melhor coisa da minha vida ❤️')">
+  🤍 Clique aqui, amor 🤍
+</button>
+
+<div class="small">
+  Toque para revelar
+</div>
+
 </body>
 </html>
