@@ -1,87 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Surpresa ❤️</title>
-
-<style>
-
-body{
-  margin:0;
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  background:linear-gradient(180deg,#1a0026,#330033);
-  font-family:Arial, sans-serif;
-  color:white;
-  text-align:center;
-}
-
-/* Coração */
-.heart{
-  font-size:80px;
-  color:pink;
-  animation:pulse 1.5s infinite;
-}
-
-/* Animação de pulsar */
-@keyframes pulse{
-  0%{transform:scale(1);}
-  50%{transform:scale(1.2);}
-  100%{transform:scale(1);}
-}
-
-/* Frase */
-.subtitle{
-  margin-top:20px;
-  opacity:0.8;
-}
-
-/* Botão */
-button{
-  margin-top:30px;
-  padding:15px 30px;
-  border:none;
-  border-radius:30px;
-  font-size:18px;
-  background:rgba(255,255,255,0.1);
-  color:white;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-button:hover{
-  background:pink;
-  color:black;
-}
-
-/* Texto pequeno */
-.small{
-  margin-top:20px;
-  font-size:14px;
-  opacity:0.6;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <title>Meu Treino</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="heart">❤️</div>
+    <header>
+        <h1>💪 Meu Site de Treino</h1>
+    </header>
 
-<div class="subtitle">
-  Uma surpresa especial te espera
-</div>
+    <section class="treino">
+        <h2>Treino de Hoje</h2>
+        <ul>
+            <li>🏃 Aquecimento - 10 min</li>
+            <li>🏋️ Supino - 3x12</li>
+            <li>🦵 Agachamento - 3x15</li>
+            <li>🔥 Abdominal - 3x20</li>
+        </ul>
+    </section>
 
-<button onclick="alert('Você é a melhor coisa da minha vida ❤️')">
-  🤍 Clique aqui, amor 🤍
-</button>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #1a1a1a);
+    color: white;
+    text-align: center;
+}
 
-<div class="small">
-  Toque para revelar
-</div>
+header {
+    background-color: red;
+    padding: 20px;
+}
+
+.treino {
+    margin-top: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #222;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
 
 </body>
 </html>
